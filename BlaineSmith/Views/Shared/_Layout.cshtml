@@ -1,0 +1,32 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html lang="en" data-ng-app="BSsite">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <base href="@Url.Action("Index")" />
+        <!--[if IE]>
+            <script type="text/javascript">
+                // Fix for IE ignoring relative base tags.
+                (function() {
+                    var baseTag = document.getElementsByTagName('base')[0];
+                    baseTag.href = baseTag.href;
+                })();   
+            </script>
+        <![endif]-->
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title</title>
+        <meta name="viewport" content="width=device-width" />
+        @Scripts.Render("~/bundles/modernizr")
+        @Styles.Render("~/bundles/css")
+         
+    </head>
+    <body>
+        
+        @RenderBody()
+    
+        @Scripts.Render("~/bundles/Scripts")
+        @RenderSection("Scripts", required: false)
+        
+        @*<div class="loader" ng-show="busy"></div> *@
+    </body>
+</html>

@@ -1,0 +1,37 @@
+﻿<div class="modal-body">
+    <form name="contactMessageForm" class="form-horizontal">
+        <fieldset>
+            <legend>Contact Me
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" data-ng-click="close();">x</button>
+            </legend>
+            <div class="form-group">
+                <label for="inputName" class="col-lg-1 control-label">Name</label>
+                <div class="col-lg-8 col-lg-offset-1">
+                    <input type="text" data-ng-model="data.inputName" class="form-control" id="inputName" placeholder="Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail" class="col-lg-1 control-label">Email</label>
+                <div class="col-lg-8 col-lg-offset-1">
+                    <input type="email" data-ng-model="data.inputEmail" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message" class="col-lg-1 control-label">Message</label>
+                <div class="col-lg-8 col-lg-offset-1">
+                    <textarea data-ng-model="data.inputMessage" class="form-control" rows="3" id="message"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="form-group">
+                    <div>
+                        <button type="submit" data-ng-click="submitForm()" class="btn btn-primary pull-right">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+
+
