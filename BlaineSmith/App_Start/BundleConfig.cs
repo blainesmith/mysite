@@ -8,19 +8,17 @@ namespace BlaineSmith
         {
             bundles.Add(new ScriptBundle("~/bundles/Scripts").Include(
                 "~/Scripts/JQuery/jquery-{version}.js",
-                "~/Scripts/JQuery/jquery.easypiechart.js",
-                "~/Scripts/Bootstrap/bootstrap.js",
+                 "~/Scripts/Bootstrap/bootstrap.js",
+                "~/Scripts/JQuery/jquery.easing.min.js",
+                "~/Scripts/JQuery/jquery.easypiechart.js",               
                 "~/Scripts/Angular/angular.js",
                 "~/Scripts/Angular/angular-route.js",
-                "~/Scripts/Angular/ui-bootstrap-{version}.js",
-                "~/Scripts/Angular/ui-bootstrap-tpls-{version}.js",
-                "~/Scripts/Template/borderMenu.js",
-                "~/Scripts/Template/custom.js"
-                            ));
+                "~/Scripts/angular-ui/ui-bootstrap.js",
+                "~/Scripts/angular-ui/ui-bootstrap-tpls.js"
+                ));
 
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                 "~/Content/bootstrap.css",
-                "~/Content/webApp.css",
                 "~/Content/animate.css",
                 "~/Content/font-awesome.css",
                 "~/Content/main.css"
@@ -32,7 +30,7 @@ namespace BlaineSmith
                 "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/site/Startup").IncludeDirectory("~/Scripts/Startup", "*.js", true));
-
+            bundles.Add(new ScriptBundle("~/site/Template").IncludeDirectory("~/Scripts/Template", "*.js", true));
             bundles.Add(new ScriptBundle("~/site/Controllers").IncludeDirectory("~/Scripts/Site/Controllers", "*.js", true));
             bundles.Add(new ScriptBundle("~/site/Dialogs").IncludeDirectory("~/Scripts/Site/Dialogs", "*.js", true));
             bundles.Add(new ScriptBundle("~/site/Directives").IncludeDirectory("~/Scripts/Site/Directives", "*.js", true));

@@ -1,8 +1,8 @@
-﻿using BlaineSmith.Business;
-using BlaineSmith.Model;
-using System.Linq;
+﻿using System.Linq;
 using System.Net;
 using System.Web.Http;
+using BlaineSmith.Business;
+using BlaineSmith.Model;
 
 
 namespace BlaineSmith.API.Blogs

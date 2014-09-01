@@ -1,4 +1,4 @@
-﻿SiteModule.controller('portfolioCtrl', [
+﻿angular.module('BSsite').controller('portfolioCtrl', [
     '$rootScope',
     '$scope',
     '$location',

@@ -1,25 +1,21 @@
-﻿@{
-    ViewBag.Title = "Home";
-}
-<div id="home">
+﻿<div id="home">
     <div class="wrap">
         <div class="container-fluid">
             <!-- Nav Menu -->
             <nav id="k-menu" class="k-menu">
                 <a href="#!" class="k-menu-trigger"><span>Menu</span></a>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="service.html">What I Do</a></li>
-                    <li><a href="about.html">About me</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li data-ng-class="{ active: isActive('/home')}" data-match-route="/home"><a href="#!/home">Home</a></li>
+                    <li data-ng-class="{ active: isActive('/service')}" data-match-route="/service"><a href="#!/service">What I Do</a></li>
+                    <li data-ng-class="{ active: isActive('/about')}" data-match-route="/about"><a href="#!/about">About me</a></li>
+                    <li data-ng-class="{ active: isActive('/portfolio')}" data-match-route="/portfolio"><a href="#!/portfolio">Portfolio</a></li>
+                    <li data-ng-class="{ active: isActive('/blog')}" data-match-route="/blog"><a href="#!/blog">Blog</a></li>
+                    <li data-ng-class="{ active: isActive('/contact')}" data-match-route="/contact"><a href="#!/contact">Contact</a></li> 
                 </ul>
                 <ul>
                     <li><a href="#!" class="fa fa-twitter">Twitter</a></li>
-                    <li><a href="#!" class="fa fa-google-plus">Google+</a></li>
-                    <li><a href="#!" class="fa fa-facebook">Facebook</a></li>
-                    <li><a href="#!" class="fa fa-dribbble">Dribbble</a></li>
+                    <li><a href="//plus.google.com/u/0/114762908896705332252" class="fa fa-google-plus">Google+</a></li>
+                    <li><a href="#!" class="fa fa-facebook">Facebook</a></li>                   
                     <li><a href="#!" class="fa fa-instagram">Instagram</a></li>
                 </ul>
             </nav>
@@ -43,19 +39,23 @@
             <!-- Welcome -->
             <div class="row text-center animated bounceIn">
                 <div class="col-md-12">
-                    <i class="fa fa-camera-retro logo"></i>
-                    <h1>Welcome to Konefix</h1>
-                    <h2>A Beautiful Portfolio Theme</h2>
+                    <i class="fa fa-laptop logo"></i>
+                    <h1>Blaine Smith</h1>
+                    <h2>Software/Web Developer</h2>
                     <p>Click on the top left corner</p>
                 </div>
             </div>
             <!-- /Welcome -->
             <footer class="text-right animated bounceIn">
-                 <p>Copyright &copy; Blaine Smith 2014</p>
+                <p>Copyright &copy; Blaine Smith 2014</p>
             </footer>
         </div>
         <!-- /.container -->
     </div>
     <!-- /.wrap -->
 </div>
+
+
+<script src="~/Scripts/Template/borderMenu.js"></script>
+<script src="~/Scripts/Template/custom.js"></script>
 

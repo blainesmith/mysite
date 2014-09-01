@@ -1,4 +1,4 @@
-﻿SiteModule.controller('contactCtrl', [
+﻿angular.module('BSsite').controller('contactCtrl', [
     '$scope',
     '$location',
     '$modal',

@@ -1,4 +1,4 @@
-﻿SiteModule.controller('appCtrl', [
+﻿angular.module('BSsite').controller('appCtrl', [
     '$rootScope',
     '$scope',
     '$location',

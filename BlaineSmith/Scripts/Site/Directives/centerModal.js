@@ -1,4 +1,4 @@
-﻿SiteModule.directive('centerModal', function () {
+﻿angular.module('BSsite').directive('centerModal', function () {
     return {
         restrict: 'A',
         link: function postLink(scope, element, attrs) {

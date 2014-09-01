@@ -1,4 +1,4 @@
-
+﻿
 /* ==========================================================================
    Theme Name: Konefix
    Theme URI: http://www.pankogut.com/themes/konefix
@@ -376,14 +376,11 @@ outline: none;
    ========================================================================== */
 
 #home {
-	background: url(../Content/Images/home_background.jpg) no-repeat center center fixed; 
-	position: fixed; 
-	  top: 0; 
-	  left: 0; 
-
-	  /* Preserve aspet ratio */
-	  min-width: 100%;
-	  min-height: 100%;
+	background: url(../images/home_background.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #home .wrap {
@@ -697,8 +694,9 @@ background-color: #16a085;
    ========================================================================== */
 
 .contact-form textarea,
-.contact-form button { 
+.contact-form button { {
 	position: relative;
+}
 	margin-top: 20px;
 }
 

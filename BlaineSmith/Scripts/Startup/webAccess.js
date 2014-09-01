@@ -1,4 +1,4 @@
-﻿SiteModule.factory('webAccess', [
+﻿angular.module('BSsite').factory('webAccess', [
     '$http',
     '$q',
     '$rootScope',

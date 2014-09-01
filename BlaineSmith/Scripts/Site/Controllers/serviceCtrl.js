@@ -1,8 +1,7 @@
-﻿angular.module('BSsite').controller('blogCtrl', [
+﻿angular.module('BSsite').controller('serviceCtrl', [
     '$rootScope',
     '$scope',
     '$location',
-    'blogs',
     function () {
-        
+
     }]);

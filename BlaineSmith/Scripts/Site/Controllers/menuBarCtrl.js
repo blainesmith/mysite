@@ -1,4 +1,4 @@
-﻿SiteModule.controller('menuBarCtrl', [
+﻿angular.module('BSsite').controller('menuBarCtrl', [
     '$scope',
     '$location',
     function ($scope, $location) {

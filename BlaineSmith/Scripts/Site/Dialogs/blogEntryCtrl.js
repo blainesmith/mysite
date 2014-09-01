@@ -1,4 +1,4 @@
-﻿SiteModule.controller('blogEntryCtrl', [
+﻿angular.module('BSsite').controller('blogEntryCtrl', [
     '$scope',
     '$modalInstance',
     'params',

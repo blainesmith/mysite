@@ -1,4 +1,4 @@
-﻿var SiteModule = angular.module('BSsite', [
+﻿angular.module('BSsite', [
     'ui.bootstrap',
     'ngRoute'
 ])
@@ -10,31 +10,42 @@ function ($routeProvider, $locationProvider) {
             redirectTo: '/home'
         })
         .when('/home', {
-            templateUrl: 'Pages/HomeConstruction',
+            templateUrl: 'NewSite/Home',
             controller: 'appCtrl'
         })
         .when('/contact', {
-            templateUrl: 'Pages/Contact',
+            templateUrl: 'NewSite/Contact',
             controller: 'contactCtrl'
         })
 
         .when('/portfolio', {
-            templateUrl: 'Pages/Portfolio',
+            templateUrl: 'NewSite/Portfolio',
             controller: 'portfolioCtrl'
         })
     
-        .when('/resume', {
-            templateUrl: 'Pages/Resume',
-            controller: 'appCtrl'
+        .when('/service', {
+            templateUrl: 'NewSite/Service',
+            controller: 'serviceCtrl'
         })
 
-        .when('/blogengine', {
-            templateUrl: 'blogengine'
+        .when('/blog', {
+            templateUrl: 'NewSite/Blog',
+            controller: 'blogCtrl'
         })
 
-        .when('/login', {
-        templateUrl: 'Shared/Login',
-        controller: 'loginCtrl'
+        .when('/portfolioSingle', {
+            templateUrl: 'NewSite/PortfolioSingle',
+            controller: 'portfolioCtrl'
+        })
+
+        .when('/post', {
+            templateUrl: 'NewSite/SinglePost',
+            controller: 'blogCtrl'
+        })
+
+        .when('/about', {
+            templateUrl: 'NewSite/About',
+            controller: 'aboutCtrl'
         })
 
          .otherwise({
