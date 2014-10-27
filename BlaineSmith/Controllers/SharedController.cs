@@ -22,5 +22,10 @@ namespace BlaineSmith.Controllers
             return PartialView();
         }
 
+        public ActionResult SiteFooter()
+        {
+            return PartialView();
+        }
+
     }
 }
