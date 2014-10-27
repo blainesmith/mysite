@@ -12,7 +12,12 @@ namespace BlaineSmith.Controllers
             return View();
         }
 
-         public ActionResult Login()
+        public ActionResult Login()
+        {
+            return PartialView();
+        }
+
+        public ActionResult NavAccessoryLayout()
         {
             return PartialView();
         }
