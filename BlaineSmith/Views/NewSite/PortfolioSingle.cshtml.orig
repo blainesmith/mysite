@@ -1,0 +1,38 @@
+
+﻿<div id="portfolio">
+    <div class="wrap">
+        <div class="container-fluid">
+            @Html.Partial("NavAccessoryLayout")
+            <div class="row text-right animated fadeInRightBig">
+                <div class="col-md-12">
+                    <h1>Single Portfolio</h1>
+                </div>
+            </div>
+            <div class="row animated fadeInLeftBig">
+                <div class="col-md-4">
+                    <img src="images/portfolio_1.jpg" class="img-responsive">
+                </div>
+                <div class="col-md-7 col-md-offset-1">
+                    <h2>Description</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="tag"><span class="label label-default">html/css</span><span class="label label-default">design</span><span class="label label-default">branding</span></p>
+                    <a href="#">
+                        <button type="button" class="btn btn-default">Visit Website</button></a>
+                </div>
+            </div>
+            <div class="row text-center animated fadeInUpBig back-link">
+                <div class="col-md-12">
+                    <a href="#!/portfolio">X</a>
+                </div>
+            </div>
+            @Html.Partial("SiteFooter")
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.wrap -->
+</div>
+
+
+<script src="~/Scripts/Template/borderMenu.js"></script>
+<script src="~/Scripts/Template/custom.js"></script>
+

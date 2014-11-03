@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace BlaineSmith.App_Start
+namespace BlaineSmith
 {
     public class FilterConfig
     {

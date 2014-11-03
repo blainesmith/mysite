@@ -2,7 +2,6 @@
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
-using BlaineSmith.App_Start;
 using MongoDB.Driver;
 
 namespace BlaineSmith

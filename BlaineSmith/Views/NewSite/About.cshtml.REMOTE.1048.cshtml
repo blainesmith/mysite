@@ -1,0 +1,61 @@
+﻿<div id="about">
+    <div class="wrap">
+        <div class="container-fluid">
+            @Html.Partial("NavAccessoryLayout")
+            <div class="row animated fadeInRightBig">
+                <div class="col-md-4 col-md-offset-1 col-sm-12 text-center">
+                    <img src="../../Content/Images/mfppic.jpg" alt="" class="img-circle" />
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h1>About Me</h1>
+                    <h2>Hello, I'm Blaine Smith</h2>
+                    <p>Computer professional with over nine years experience in the development of web sites. Skilled in web user interface design, HTML, CSS, 
+                        JavaScript, jQuery, C#, and ASP.Net. Proficient with AngularJS and Express.JS frameworks.  Competent with Node.JS and MongoDb. Good knowledge of web standards, usability and accessibility issues, as well as Search Engine Optimization strategies. 
+                        Strong communication and research skills. Thorough and highly motivated.</p>
+                </div>
+            </div>
+            <!-- Skills -->
+            <div id="chart" class="row animated fadeInLeftBig">
+                <h2 class="text-center">Skills</h2>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <span class="chart" data-percent="90">
+                        <span class="percent">90</span>
+                        <canvas height="170" width="170"></canvas>
+                    </span>
+                    <h2>HTML/CSS</h2>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <span class="chart" data-percent="75">
+                        <span class="percent">75</span>
+                        <canvas height="170" width="170"></canvas>
+                    </span>
+                    <h2>JAVASCRIPT</h2>
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <span class="chart" data-percent="85">
+                        <span class="percent">85</span>
+                        <canvas height="170" width="170"></canvas>
+                    </span>
+                    <h2>C#/ASP.NET</h2>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <span class="chart" data-percent="60">
+                        <span class="percent">60</span>
+                        <canvas height="170" width="170"></canvas>
+                    </span>
+                    <h2>NODE.JS</h2>
+                </div>
+            </div>
+            <!-- /Skills -->
+            @Html.Partial("SiteFooter")
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.wrap -->
+</div>
+
+
+<script src="~/Scripts/Template/borderMenu.js"></script>
+<script src="~/Scripts/Template/custom.js"></script>
+

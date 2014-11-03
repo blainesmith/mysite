@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace BlaineSmith.App_Start
+namespace BlaineSmith
 {
     public class RouteConfig
     {

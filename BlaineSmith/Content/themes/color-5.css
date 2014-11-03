@@ -1,32 +1,18 @@
 
 /* ==========================================================================
-   Theme Name: Konefix / COLOR 5
-   Theme URI: http://www.pankogut.com/themes/html/konefix
-   Author: PanKogut
-   Author URI: http://www.pankogut.com
-   Description: Konefix is a responsive portoflio theme for creative with minimal design, flexible grid layout.
-
-   Version: 1.0.0
-   License: GNU General Public License v2 or later
-   License URI: http://www.gnu.org/licenses/gpl-2.0.html
-   Tags: grey, right-sidebar, flexible-width, featured-images, bootstrap
-   Text Domain: konefix
-   ========================================================================== */
-
-/* ==========================================================================
    Base
    ========================================================================== */
 
 body {
-    background-color: #95a5a6;
+	background-color: #95a5a6;
 }
 
 a {
-    color: #7f8c8d;
+	color: #7f8c8d;
 }
 
 a:hover {
-    color: #51595A;
+	color: #51595A;
 }
 
 /* ==========================================================================

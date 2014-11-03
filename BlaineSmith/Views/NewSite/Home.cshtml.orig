@@ -1,0 +1,25 @@
+﻿<div id="home">
+    <div class="wrap">
+        <div class="container-fluid">
+            @Html.Partial("NavAccessoryLayout")
+            <!-- Welcome -->
+            <div class="row text-center animated bounceIn">
+                <div class="col-md-12">
+                    <i class="fa fa-laptop logo"></i>
+                    <h1>Blaine Smith</h1>
+                    <h2>Software/Web Developer</h2>
+                    <p>Click on the top left corner</p>
+                </div>
+            </div>
+            <!-- /Welcome -->
+            @Html.Partial("SiteFooter")
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.wrap -->
+</div>
+
+
+<script src="~/Scripts/Template/borderMenu.js"></script>
+<script src="~/Scripts/Template/custom.js"></script>
+
