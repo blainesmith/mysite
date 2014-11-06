@@ -1,33 +1,28 @@
 ﻿angular.module('BSsite').controller('contactCtrl', [
-    '$scope',
-    '$location',
-    '$modal',
-    function ($scope, $location, $modal) {
-        $scope.model = {};
+    '$scope', '$location', 'contact',
+    function ($scope, $location, contact) {
+        $scope.model = {
+            email: {
+                FromName: '',
+                FromEmail: '',
+                Subject: '',
+                Body: ''
+            }
+        };
 
-        $scope.contactForm = function () {
-            var params = {
-                action: "",
-                emailData: {}
-            };
+        $scope.contact = {}
 
-            var contactModal = $modal.open({
-                templateUrl: 'Pages/ContactForm',
-                controller: 'contactCtrl.modal',
-                backdrop: 'static',
-                keyboard: false,
-                resolve: {
-                    params: function () {
-                        return params;
-                    }
-                }
-            });
-            contactModal.result.then(function (returnValue) {
-                //if (returnValue.action === 'Submit') {
-                //    console.log("posting data....");
-                //    $http.post('http://posttestserver.com/post.php?dir=jsfiddle', JSON.stringify(data)).success(function () { /*success callback*/ });
-                //}
+        $scope.sendEmail = function () {
+            contact.SendContactEmail.Update($scope.model.email).then(function() {
+                eraseFields();
             });
         };
+
+        function eraseFields() {
+            $scope.model.email.FromName = '';
+            $scope.model.email.FromEmail = '';
+            $scope.model.email.Subject = '';
+            $scope.model.email.Body = '';
+        }
 
     }]);

@@ -43,6 +43,12 @@
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Exchange.WebServices">
+      <HintPath>..\packages\EWS-Api-2.1.1.0.0\lib\net35\Microsoft.Exchange.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.WebServices.Auth">
+      <HintPath>..\packages\EWS-Api-2.1.1.0.0\lib\net35\Microsoft.Exchange.WebServices.Auth.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Web.Helpers">
       <HintPath>..\packages\Microsoft.AspNet.WebHelpers.3.2.2\lib\net45\Microsoft.Web.Helpers.dll</HintPath>
     </Reference>
@@ -138,6 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API\Blogs\BlogApiController.cs" />
+    <Compile Include="API\Email\SendEmailController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Controllers\NewSiteController.cs" />
     <Compile Include="Controllers\SharedController.cs" />
@@ -223,8 +230,11 @@
     <Content Include="Scripts\Site\Dialogs\contactCtrl.modal.js" />
     <Content Include="Scripts\Site\Controllers\app-specific.js" />
     <Content Include="Scripts\Site\Controllers\portfolioCtrl.js" />
+    <Content Include="Scripts\Site\Dialogs\messageBoxCtrl.js" />
     <Content Include="Scripts\Site\Directives\centerModal.js" />
-    <Content Include="Scripts\Site\Services\blogsCtrl.js" />
+    <Content Include="Scripts\Site\Services\blog.js" />
+    <Content Include="Scripts\Site\Services\contact.js" />
+    <Content Include="Scripts\Site\Services\systemError.js" />
     <Content Include="Scripts\Startup\homeModule.js" />
     <Content Include="Scripts\Startup\webAccess.js" />
     <Content Include="Scripts\Template\borderMenu.js" />
@@ -257,6 +267,7 @@
     <Content Include="Views\NewSite\About.cshtml" />
     <Content Include="Views\Shared\NavAccessoryLayout.cshtml" />
     <Content Include="Views\Shared\SiteFooter.cshtml" />
+    <Content Include="Views\Shared\MessageBox.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

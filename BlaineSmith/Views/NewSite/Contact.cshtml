@@ -13,28 +13,28 @@
                 <div class="col-md-2 col-md-offset-1">
                     <address>
                         <strong>Blaine Smith</strong><br>
-                        <a style="color: gray;"href="mailto:#">blaine@blainesmith.net</a>
+                        <a style="color:lightgrey;"href="mailto:#">blaine@blainesmith.net</a>
                     </address>
                 </div>
                 <!-- Contact Form -->
                 <div class="col-md-9">
                     <div class="row">
-                        <form role="form" action="#" class="contact-form">
+                        <form  name="contact" class="contact-form">
                             <div class="col-md-4 col-sm-4">
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <input type="text" class="form-control" placeholder="Your Name"  required ng-model="model.email.FromName">
                             </div>
                             <div class="col-md-4 col-sm-4">
-                                <input type="text" class="form-control" placeholder="Your Email">
+                                <input type="text" class="form-control" placeholder="Your Email" required ng-model="model.email.FromEmail">
                             </div>
                             <div class="col-md-4 col-sm-4">
-                                <input type="text" class="form-control" placeholder="Subject">
+                                <input type="text" class="form-control" placeholder="Subject" required ng-model="model.email.Subject">
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-md-12">
-                                <textarea class="form-control" rows="9"></textarea>
+                                <textarea class="form-control" rows="9" required ng-model="model.email.Body"></textarea>
                             </div>
                             <div class="col-md-12 text-right">
-                                <button type="button" class="btn btn-default">Submit</button>
+                                <button type="button" class="btn btn-default" ng-disabled="contact.$invalid" ng-click="sendEmail()">Submit</button>
                             </div>
                         </form>
                     </div>

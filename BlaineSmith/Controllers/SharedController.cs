@@ -27,5 +27,10 @@ namespace BlaineSmith.Controllers
             return PartialView();
         }
 
+        public ActionResult MessageBox()
+        {
+            return PartialView();
+        }
+
     }
 }
