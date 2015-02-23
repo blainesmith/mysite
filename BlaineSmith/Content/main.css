@@ -106,8 +106,7 @@ outline: none;
    Menu
    ========================================================================== */
 
-.k-menu
-{
+.k-menu {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -116,6 +115,7 @@ outline: none;
 	border-width: 0px;
 	border-style: solid;
 	border-color: #333;
+	background-color: #000000;
 	background-color: rgba(0,0,0,0);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -127,6 +127,7 @@ outline: none;
 .k-menu.k-menu-open {
 	height: 100%;
 	border-width: 0px 0px 50px 150px;
+	background-color: #000000;
 	background-color: rgba(0,0,0,0.3);
 	-webkit-transition: border-width 0.3s, background-color 0.3s;
 	transition: border-width 0.3s, background-color 0.3s;
@@ -324,6 +325,7 @@ outline: none;
 
 .k-menu ul:first-of-type li a {
 	padding: 0 20px;
+	box-shadow: inset 0 1px #000000;
 	box-shadow: inset 0 1px rgba(0,0,0,0.2);
 	color: #fff;
 	text-transform: uppercase;
@@ -334,6 +336,7 @@ outline: none;
 }
 
 .k-menu ul:first-of-type li:last-child a {
+	box-shadow: inset 0 1px #000000, inset 0 -1px #000000;
 	box-shadow: inset 0 1px rgba(0,0,0,0.2), inset 0 -1px rgba(0,0,0,0.2);
 }
 
@@ -408,7 +411,7 @@ right: 0;
    ========================================================================== */
 
 #about img {
-	border: 10px solid #8e44ad;
+	border: 10px solid #929090;
 }
 
 #about .row {
@@ -454,6 +457,7 @@ font-size: .8em;
 	position: relative;
 	margin: 10px;
 	overflow: hidden;
+	background: #000000;
 	background: rgba(0,0,0,0.2);
 	-webkit-transition: background 0.3s ease-in-out;
 	-moz-transition: background 0.3s ease-in-out;
@@ -461,6 +465,7 @@ font-size: .8em;
 }
 
 .caption:hover {
+	background: #000000;
 	background: rgba(0,0,0,0);
 }
 
@@ -732,7 +737,7 @@ footer a {
 	padding: 6px 12px;
 	font-size: 14px;
 	line-height: 1.428571429;
-	color: #555;
+	color: #555555;
 	background-color: #f2f6f7;
 	background-image: none;
 	border: 0 !important;
@@ -853,7 +858,7 @@ transition: width .6s ease;
 }
 
 /* Switcher */
-.switcher {
+/*.switcher {
 	position:fixed;
 	right:-160px;
 	top:250px;
@@ -924,4 +929,4 @@ transition: width .6s ease;
 	outline:none;
 	background-color:#fff;
 	padding: 5px;
-}
+}*/

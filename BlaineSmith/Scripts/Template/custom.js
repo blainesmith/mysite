@@ -6,7 +6,7 @@ $(document).ready(function() {
 		
 		$(function() {
 			$('.chart').easyPieChart({
-				barColor: '#16a085',
+			    barColor: '#929090',
 				scaleColor: false,
 				lineCap:'butt',
 				size: '170',
@@ -20,188 +20,188 @@ $(document).ready(function() {
 	   ========================================================================== */
 
 		$('#myTab a').click(function (e) {
-		  e.preventDefault()
-		  $(this).tab('show')
+		    e.preventDefault();
+		    $(this).tab('show');
 		});
 
 	/* ==========================================================================
 	   Color Switcher
 	   ========================================================================== */
 
-		$(document).ready(function() {
+	//	$(document).ready(function() {
 
-		var switcher = $('#switcher');
+	//	var switcher = $('#switcher');
 
-		switcher.find('.switcher-btn').click(function(e) {
-			e.preventDefault();
-			switcher.toggleClass('switcher-active');
-		})
+	//	switcher.find('.switcher-btn').click(function(e) {
+	//		e.preventDefault();
+	//		switcher.toggleClass('switcher-active');
+	//	})
 
-		switcher.find('.color .color-1').click(function() {
-			$('head').find('link[href*="color-2.css"]').remove(),
-			$('head').find('link[href*="color-3.css"]').remove(),
-			$('head').find('link[href*="color-4.css"]').remove(),
-			$('head').find('link[href*="color-5.css"]').remove();
-			$('#chart .col-sm-6').remove();
-			$('#chart').append('\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="90"><span class="percent">90</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>HTML/CSS</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="70"><span class="percent">70</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>WEB DEVELOPMENT</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="85"><span class="percent">85</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>WEB DESIGN</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="60"><span class="percent">60</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>GRAPHIC</h2>\
-			</div>');
-			$('.chart').easyPieChart({
-				barColor: '#16a085',
-				scaleColor: false,
-				lineCap:'butt',
-				size: '170',
-				lineWidth: '10'
-			});
-		})
-		switcher.find('.color .color-2').click(function() {
-			$('head').append('<link rel="stylesheet" href="Content/themes/color-2.css">'),
-			$('#chart .col-sm-6').remove();
-			$('#chart').append('\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="90"><span class="percent">90</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>HTML/CSS</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="70"><span class="percent">70</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>WEB DEVELOPMENT</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="85"><span class="percent">85</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>WEB DESIGN</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="60"><span class="percent">60</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>GRAPHIC</h2>\
-			</div>');
-			$('.chart').easyPieChart({
-				barColor: '#2980b9',
-				scaleColor: false,
-				lineCap:'butt',
-				size: '170',
-				lineWidth: '10'
-			});
-		})
-		switcher.find('.color .color-3').click(function() {
-			$('head').append('<link rel="stylesheet" href="Content/themes/color-3.css">'),
-			$('#chart .col-sm-6').remove();
-			$('#chart').append('\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="90"><span class="percent">90</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>HTML/CSS</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="70"><span class="percent">70</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>WEB DEVELOPMENT</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="85"><span class="percent">85</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>WEB DESIGN</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="60"><span class="percent">60</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>GRAPHIC</h2>\
-			</div>');
-			$('.chart').easyPieChart({
-				barColor: '#c0392b',
-				scaleColor: false,
-				lineCap:'butt',
-				size: '170',
-				lineWidth: '10'
-			});
-		})
-		switcher.find('.color .color-4').click(function() {
-			$('head').append('<link rel="stylesheet" href="Content/themes/color-4.css">'),
-			$('#chart .col-sm-6').remove();
-			$('#chart').append('\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="90"><span class="percent">90</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>HTML/CSS</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="70"><span class="percent">70</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>WEB DEVELOPMENT</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="85"><span class="percent">85</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>WEB DESIGN</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="60"><span class="percent">60</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>GRAPHIC</h2>\
-			</div>');
-			$('.chart').easyPieChart({
-				barColor: '#8e44ad',
-				scaleColor: false,
-				lineCap:'butt',
-				size: '170',
-				lineWidth: '10'
-			});
-		})
-		switcher.find('.color .color-5').click(function() {
-			$('head').append('<link rel="stylesheet" href="Content/themes/color-5.css">'),
-			$('#chart .col-sm-6').remove();
-			$('#chart').append('\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="90"><span class="percent">90</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>HTML/CSS</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="70"><span class="percent">70</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>WEB DEVELOPMENT</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="85"><span class="percent">85</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>WEB DESIGN</h2>\
-			</div>\
-			<div class="col-md-3 col-sm-6 text-center">\
-				<span class="chart" data-percent="60"><span class="percent">60</span>\
-				<canvas height="170" width="170"></canvas>\
-				<h2>GRAPHIC</h2>\
-			</div>');
-			$('.chart').easyPieChart({
-				barColor: '#7f8c8d',
-				scaleColor: false,
-				lineCap:'butt',
-				size: '170',
-				lineWidth: '10'
-			});
-		})
+	//	switcher.find('.color .color-1').click(function() {
+	//		$('head').find('link[href*="color-2.css"]').remove(),
+	//		$('head').find('link[href*="color-3.css"]').remove(),
+	//		$('head').find('link[href*="color-4.css"]').remove(),
+	//		$('head').find('link[href*="color-5.css"]').remove();
+	//		$('#chart .col-sm-6').remove();
+	//		$('#chart').append('\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="90"><span class="percent">90</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>HTML/CSS</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="70"><span class="percent">70</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>WEB DEVELOPMENT</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="85"><span class="percent">85</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>WEB DESIGN</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="60"><span class="percent">60</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>GRAPHIC</h2>\
+	//		</div>');
+	//		$('.chart').easyPieChart({
+	//			barColor: '#16a085',
+	//			scaleColor: false,
+	//			lineCap:'butt',
+	//			size: '170',
+	//			lineWidth: '10'
+	//		});
+	//	})
+	//	switcher.find('.color .color-2').click(function() {
+	//		$('head').append('<link rel="stylesheet" href="Content/themes/color-2.css">'),
+	//		$('#chart .col-sm-6').remove();
+	//		$('#chart').append('\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="90"><span class="percent">90</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>HTML/CSS</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="70"><span class="percent">70</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>WEB DEVELOPMENT</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="85"><span class="percent">85</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>WEB DESIGN</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="60"><span class="percent">60</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>GRAPHIC</h2>\
+	//		</div>');
+	//		$('.chart').easyPieChart({
+	//			barColor: '#2980b9',
+	//			scaleColor: false,
+	//			lineCap:'butt',
+	//			size: '170',
+	//			lineWidth: '10'
+	//		});
+	//	})
+	//	switcher.find('.color .color-3').click(function() {
+	//		$('head').append('<link rel="stylesheet" href="Content/themes/color-3.css">'),
+	//		$('#chart .col-sm-6').remove();
+	//		$('#chart').append('\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="90"><span class="percent">90</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>HTML/CSS</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="70"><span class="percent">70</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>WEB DEVELOPMENT</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="85"><span class="percent">85</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>WEB DESIGN</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="60"><span class="percent">60</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>GRAPHIC</h2>\
+	//		</div>');
+	//		$('.chart').easyPieChart({
+	//			barColor: '#c0392b',
+	//			scaleColor: false,
+	//			lineCap:'butt',
+	//			size: '170',
+	//			lineWidth: '10'
+	//		});
+	//	})
+	//	switcher.find('.color .color-4').click(function() {
+	//		$('head').append('<link rel="stylesheet" href="Content/themes/color-4.css">'),
+	//		$('#chart .col-sm-6').remove();
+	//		$('#chart').append('\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="90"><span class="percent">90</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>HTML/CSS</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="70"><span class="percent">70</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>WEB DEVELOPMENT</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="85"><span class="percent">85</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>WEB DESIGN</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="60"><span class="percent">60</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>GRAPHIC</h2>\
+	//		</div>');
+	//		$('.chart').easyPieChart({
+	//			barColor: '#8e44ad',
+	//			scaleColor: false,
+	//			lineCap:'butt',
+	//			size: '170',
+	//			lineWidth: '10'
+	//		});
+	//	})
+	//	switcher.find('.color .color-5').click(function() {
+	//		$('head').append('<link rel="stylesheet" href="Content/themes/color-5.css">'),
+	//		$('#chart .col-sm-6').remove();
+	//		$('#chart').append('\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="90"><span class="percent">90</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>HTML/CSS</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="70"><span class="percent">70</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>WEB DEVELOPMENT</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="85"><span class="percent">85</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>WEB DESIGN</h2>\
+	//		</div>\
+	//		<div class="col-md-3 col-sm-6 text-center">\
+	//			<span class="chart" data-percent="60"><span class="percent">60</span>\
+	//			<canvas height="170" width="170"></canvas>\
+	//			<h2>GRAPHIC</h2>\
+	//		</div>');
+	//		$('.chart').easyPieChart({
+	//			barColor: '#7f8c8d',
+	//			scaleColor: false,
+	//			lineCap:'butt',
+	//			size: '170',
+	//			lineWidth: '10'
+	//		});
+	//	})
 
-	});
+	//});
 
 
 	/* ==========================================================================
