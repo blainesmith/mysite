@@ -34,7 +34,7 @@
                                 <textarea class="form-control" rows="8" required ng-model="model.email.Body"></textarea>
                             </div>
                             <div class="col-md-12 text-right">
-                                <button type="button" class="btn btn-default" ng-if="contact.$invalid" ng-click="sendEmail()">Submit</button>
+                                <button type="button" class="btn btn-default" ng-hide="contact.$invalid" ng-click="sendEmail()">Submit</button>
                             </div>
                         </form>
                     </div>
